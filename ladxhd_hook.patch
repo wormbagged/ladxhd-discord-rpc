@@ -1,0 +1,23 @@
+diff --git a/ladxhd_game_source_code/ProjectZ.Core/Game1.cs b/ladxhd_game_source_code/ProjectZ.Core/Game1.cs
+index 8780a6c..0f43e88 100644
+--- a/ladxhd_game_source_code/ProjectZ.Core/Game1.cs
++++ b/ladxhd_game_source_code/ProjectZ.Core/Game1.cs
+@@ -1,5 +1,6 @@
+-﻿using System;
++using System;
+ using System.IO;
++using System.Globalization;
+ using System.Threading;
+ using GBSPlayer;
+ using Microsoft.Xna.Framework;
+@@ -493,6 +494,10 @@ namespace ProjectZ
+                     DebugText += "\nCurrentState: " + MapManager.ObjLink.CurrentState;
+                 }
+             }
++
++            // --- Discord RPC State Bridge ---
++            DiscordRpcBridge.Update(this, gameTime);
++
+             base.Update(gameTime);
+         }
+ 

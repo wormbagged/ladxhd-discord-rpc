@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.log
+presence.log
+*.tmp
+ladxhd_state.json
+.vscode/
+.idea/
+GEMINI.md
+legacy_tools/
+presence.log
+*.tmp
+ladxhd_state.json
